@@ -59,6 +59,6 @@ export default defineConfig(({ mode }) => {
           emptyOutDir: true,
           sourcemap: true,
         },
-    base: "/clients/core-contenthandler_obs_notes/",
+    base: "/clients/core-contenthandler-obs_notes/",
   };
 });
