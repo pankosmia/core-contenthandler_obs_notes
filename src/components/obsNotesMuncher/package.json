@@ -1,6 +1,6 @@
 {
   "name": "pankosmia-obs_notes-muncher",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "homepage": "https://github.com/pankosmia/core-contenthandler_obs_notes",
   "main": "munchersPackageExport/obs-notes-muncher-rcl.umd.js",
