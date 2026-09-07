@@ -81,15 +81,17 @@ function OBSNotesViewerMuncher({ metadata, debugRef, obs }) {
         </Grid>
         <Grid item size={12} sx={{ paddingRight: "5%" }}>
           {ingredient && (
-            <Markdown className="markdown">
-              {verseNotes.length > 0
-                ? verseNotes
-                    .map((v, n) => {
-                      return `* (**${verseIds[n]}**) ${v.replace(". \n\n\n\n ", ". \n\n * ")}${!(verseSupReferences[n] === "") ? ` (${verseSupReferences[n].replace("rc://*/ta/man/translate/", "")})` : ""}`;
-                    })
-                    .join("\n")
-                : "No notes found for this paragraph"}
-            </Markdown>
+            <div className="markdown">
+              <Markdown>
+                {verseNotes.length > 0
+                  ? verseNotes
+                      .map((v, n) => {
+                        return `* (**${verseIds[n]}**) ${v.replace(". \n\n\n\n ", ". \n\n * ")}${!(verseSupReferences[n] === "") ? ` (${verseSupReferences[n].replace("rc://*/ta/man/translate/", "")})` : ""}`;
+                      })
+                      .join("\n")
+                  : "No notes found for this paragraph"}
+              </Markdown>
+            </div>
           )}
         </Grid>
       </Grid>
